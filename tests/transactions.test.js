@@ -1,6 +1,6 @@
 const request = require('supertest');
-const app = require('../src/server');
-const { pool } = require('../src/config/database');
+const app = require('../src/main');
+const { pool } = require('../src/common/database');
 
 describe('Transaction Endpoints', () => {
   let authToken;
